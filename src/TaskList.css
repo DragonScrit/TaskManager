@@ -1,0 +1,99 @@
+/* общие стили приложения*/
+body{
+  background: #232345;
+}
+.wrapper{
+  max-width: 1000px;
+  min-height: 500px;
+  background: #4694fa;
+  margin: 50px auto 50px;
+  border-radius: 5px;
+}
+/* Стили для компоненты поиска */
+.searchTask{
+  padding: 10px;
+  display: flex;
+}
+.searchTask input{
+  margin-right: 3px;
+  padding: 3px;
+}
+/* Стили для компоненты содания задачи */
+.createTask{
+ background: #a9ff8f;
+}
+/* Хедер */
+.header_create{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 2px solid #888888;
+}
+.header_create input{
+  padding: 3px;
+}
+.header_create span{
+  padding-right: 10px;
+}
+.action{
+  text-align: right;
+}
+.action button{
+  background: inherit;
+  border: none;
+  cursor: pointer;
+}
+.action button img{
+  width: 22px;
+}
+/* Футер */
+.footer_create{
+  padding-top: 20px;
+  text-align: center;
+}
+.footer_create textarea{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  background: #83faa7;
+  font-size: 16px;
+  resize: none;
+}
+.footer_create button{
+  margin: 10px;
+  font-size: 16px;
+  padding: 5px 3px;
+
+}
+/* Стилизация компоненты Задача */
+.task{
+  margin: 10px;
+  padding: 5px;
+  /* padding: 20px; */
+}
+.header_task{
+  display: flex;
+  justify-content: space-between;
+  background: #d5f154;
+  padding: 5px;
+  border-bottom: 2px solid #888;
+  cursor: pointer;
+}
+.task_info span {
+  padding-right: 10px;
+}
+.footer_task{
+  display: none;
+  background: #d5f154;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.click{
+  width: 0;
+  height: 0;
+  appearance: none;
+  position: absolute;
+}
+.click:checked ~ .footer_task{
+  display: block;
+}
